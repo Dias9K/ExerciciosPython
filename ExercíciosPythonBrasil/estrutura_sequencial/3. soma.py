@@ -1,4 +1,4 @@
-## Faça um programa que peça dois números e imprima a soma.
+# Faça um programa que peça dois números e imprima a soma.
 
 numero1 = int(input("digite o primeiro número: "))
 numero2 = int(input("digite o segundo número: "))
