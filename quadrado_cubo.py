@@ -12,7 +12,9 @@ for i in range(max_numeros):
 
 # saída dos elementos atribuídos nas listas
 print(f"Os números inseridos foram:\n{numeros}")
-print(f"Números elevados ao quadrado\n{numeros[i]*numeros[i]}")
-print(cubos)
+print(f"Números elevados ao quadrado: \n{quadrados}")
+print(f"Números elevados ao cubo: \n{cubos}")
 
-#somente com o número 2
+# somente com o primeiro elemento da lista
+print(f"{numeros[0]} elevado ao quadrado é: {numeros[0]*numeros[0]}")
+print(f"{numeros[0]} elevado ao cubo é: {numeros[0]*numeros[0]*numeros[0]}")
