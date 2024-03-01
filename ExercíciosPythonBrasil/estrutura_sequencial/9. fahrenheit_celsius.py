@@ -4,5 +4,5 @@
 fahrenheit = float(input("Digite a temperatura em graus Fahrenheit: "))
 celsius = (fahrenheit - 32) / 1.8
 
-# %.2f igual em C para formatar um número, mas a representação da variável, é utilizado o % também
-print("A temperatura convertida em graus Celsius é: %.2f" % celsius) 
+# %.1f igual em C para formatar um número, mas a representação da variável, é utilizado o % também
+print("A temperatura convertida em graus Celsius é: %.1f" % celsius)
