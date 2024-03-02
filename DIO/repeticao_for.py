@@ -9,3 +9,8 @@ for letra in texto:
 # que contenha no texto, se sim, ele retorna essa letra que tem no texto
 else:
     print(texto)
+
+
+for numero in range(0,51, 5):
+    print(numero, end=(", "))
+    print(list(range(0,51, 5)))
