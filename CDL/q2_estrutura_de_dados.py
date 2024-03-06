@@ -1,8 +1,9 @@
-""" Aluno: Gabriel Magalhães Dias
-Crie um vetor que receba 50 números. Desses 50 números, 
-verifique quantas vezes o número 6 foi repetido.
-Calcule também a porcentagem das vezes que o número 6 se repetiu.
- """
+"""
+Aluno: Gabriel Magalhães Dias
+Q2 - Estrutura de Dados e Algoritmos
+Um dado é lançado 50 vezes, e o seu valor correspondente
+é armazenado em um vetor. Faça um programa que determine
+o percentual de ocorrências do número 6 dentre esses 50 lançamentos."""
 
 import random
 
