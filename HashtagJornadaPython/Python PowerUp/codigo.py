@@ -19,7 +19,7 @@ pyautogui.press("tab")
 pyautogui.write("uau_demais_python")  # senha
 pyautogui.press("enter")
 
-tabela = pandas.read_csv("Python PowerUp\produtos.csv")
+tabela = pandas.read_csv("HashtagJornadaPython\Python PowerUp\produtos.csv")
 
 pyautogui.press("tab")  # entra nos campos de cadastro
 for linha in tabela.index:
