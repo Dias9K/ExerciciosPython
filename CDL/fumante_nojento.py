@@ -8,8 +8,8 @@ print("Sabia que a cada cigarro que você fuma, 10 minutos da sua vida são joga
 cigarros_por_dia = int(input("Quantos cigarros você fuma por dia?\n"))
 anos_fumados = int(input("Há quantos anos você é fumante?\n"))
 
-anos = cigarros_por_dia * (365 * anos_fumados)
-minutos_perdidos = anos * 10
+total_cigarros = cigarros_por_dia * (365 * anos_fumados)
+minutos_perdidos = total_cigarros * 10
 dias_perdidos = minutos_perdidos / 1440  # número de minutos em um dia
 
 print(f"PARABÉNS! VOCÊ VAI MORRER {int(dias_perdidos)} DIAS MAIS CEDO!".center(50, "="))
