@@ -5,8 +5,8 @@
 print("Olá, fumante nojento!".center(50, "="))
 print("Sabia que a cada cigarro que você fuma, 10 minutos da sua vida são jogados no lixo?\n"
       "Imagine só quantos dias você já não deve ter perdido, né?")
-cigarros_por_dia = int(input("Quantos cigarros você fuma por dia?"))
-anos_fumados = int(input("Há quantos anos você é fumante?"))
+cigarros_por_dia = int(input("Quantos cigarros você fuma por dia?\n"))
+anos_fumados = int(input("Há quantos anos você é fumante?\n"))
 
 anos = cigarros_por_dia * (365 * anos_fumados)
 minutos_perdidos = anos * 10
