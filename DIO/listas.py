@@ -1,4 +1,3 @@
-vazia = []
 frutas = ["laranja", "morango", "limão", "banana"]
 for i in range(len(frutas)):
     print(frutas[i])  # também é possível acessar os elementos usando valores negativos no índice
