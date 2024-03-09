@@ -31,7 +31,8 @@ linguagens.sort(
 print(linguagens)
 linguagens.sort(
     key=lambda x: len(x), reverse=True
-)  # função anônima que ordena os elementos de acordo com a sua quantidade de caracteres e com a ordem alfabética descendente
+)  # função anônima que ordena os elementos de acordo com a sua quantidade de caracteres e com a ordem alfabética
+# descendente
 print(linguagens)
 
 

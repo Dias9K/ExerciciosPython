@@ -8,8 +8,8 @@ while opcao != 0:
         # break PARA a execução na linha que está inserido
     elif opcao == 2:
         for numeral in range(10):
-            print(numeral, end=(", "))
-        continue 
-        print("Sacando...") # PARA a sua execução em todas as linhas seguintes após a sua instanciação
+            print(numeral, end=", ")
+        print("Sacando...")
+        continue  # PARA a sua execução em todas as linhas seguintes após a sua instanciação
 else:
     print("Saindo...")
