@@ -26,16 +26,31 @@ print("iterando dicionários".center(60, "="))
 # for chave in contatos:
 #     print(chave, contatos[chave])
 
-for chave, valor in contatos.items():  # entendi nada, preciso rever isso
+for chave, valor in contatos.items():  # TODO entendi nada, preciso rever isso
     print(chave, valor)
 
 print("testando métodos da classe".center(60, "="))
 # {}.clear limpa todos os valores do dicionário
-# {}.copy tira uma cópia do dicionário
+# {}.copy faz uma cópia do dicionário
 
 # {}.fromkeys
-# TODO entender que diabo esse método faz
-chaves = ["chave1", "chave2", "chave3"]
-valor_padrao = "valor"
-novo_dicionario = dict.fromkeys(chaves, valor_padrao)
-print(novo_dicionario)
+fromkeys = dict.fromkeys(["nome", "telefone"], "vazio")  # usado para CRIAR um novo dicionário VAZIO,
+# OU com valores atribuidos. primeiro coloca uma lista das chaves que serão referenciadas e depois atribuir ou não um
+# valor padrão para elas, do contrário, o valor "none" é atribuído
+print(fromkeys)
+
+# {}.get
+print(contatos.get("gabrel@gmail.com", "chave não encontrada"))  # o método é utilizado para procurar uma chave
+# existente no dicionário, e se essa chave não for encontrada, um valor "default" será retornado
+print(contatos.get("gabriel@gmail.com", {}).get("telefone", {}))
+# usar dessa forma em caso de dicionários aninhados
+
+# {}.items
+print(contatos.items())  # retorna todos as chaves com valores dentro de um dicionário, sendo aninhado ou não
+
+# {}.keys
+print(contatos.keys())  # retorna todas as chaves dentro de um dicionário, mas não se houverem dicionários aninhados
+
+# {}.pop
+contatos.pop("gabriel@gmail.com")  # remove do dicionário a chave especificada e os seus valores
+print(contatos.keys())
