@@ -28,3 +28,14 @@ print("iterando dicionários".center(60, "="))
 
 for chave, valor in contatos.items():  # entendi nada, preciso rever isso
     print(chave, valor)
+
+print("testando métodos da classe".center(60, "="))
+# {}.clear limpa todos os valores do dicionário
+# {}.copy tira uma cópia do dicionário
+
+# {}.fromkeys
+# TODO entender que diabo esse método faz
+chaves = ["chave1", "chave2", "chave3"]
+valor_padrao = "valor"
+novo_dicionario = dict.fromkeys(chaves, valor_padrao)
+print(novo_dicionario)
