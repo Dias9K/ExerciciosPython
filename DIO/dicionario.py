@@ -52,5 +52,13 @@ print(contatos.items())  # retorna todos as chaves com valores dentro de um dici
 print(contatos.keys())  # retorna todas as chaves dentro de um dicionário, mas não se houverem dicionários aninhados
 
 # {}.pop
-contatos.pop("gabriel@gmail.com")  # remove do dicionário a chave especificada e os seus valores
+print(contatos.pop("gabriel@gmail.co", "chave não encontrada"))  # remove do dicionário a chave especificada e os
+# seus valores
 print(contatos.keys())
+# também é possível informar um valor default, caso a chave especificada não seja encontrada
+
+# {}.popitem
+print(f"removi isso {contatos.popitem()}")  # remove um item ALEATÓRIO do dicionário
+print(contatos.keys())
+
+# {}.setdefault
