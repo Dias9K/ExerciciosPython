@@ -78,9 +78,16 @@ print(contatos)
 # {}.values
 print(contatos.values())  # retorna todos os valores dentro de um dicionário
 
-# {}.in
+# in
 resultado = "gabriel@gmail.com" in contatos  # verifica se a chave informada contém no dicionário
 resultado2 = "telefone" in contatos["gabriel@gmail.com"]  # utilizando um dicionário aninhado e fazendo a verificação
 # com a chave informada
 print(resultado)
 print(resultado2)
+
+# del
+del contatos["joao@gmail.com"]["telefone"]
+# remove uma chave específica do dicionário, o mesmo também se aplica aos dicionários aninhados, sendo necessário
+# informar a sua outra chave
+del contatos["gabriel@gmail.com"]
+print(contatos)
