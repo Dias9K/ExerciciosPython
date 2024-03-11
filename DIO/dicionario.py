@@ -18,7 +18,7 @@ contatos = {
     "bruna@gmail.com": {"nome": "Bruna", "telefone": "2004-2289"},
 }  # dicionários aninhados. no dicionário "contatos" está sendo armazenado outro dicionário contendo as
 # chaves de nomes e telefones dos usuários
-contatos["bruna@gmail.com"]["idade"] = 22  # atribuindo novo valor dentro de um dicionário aninhado e acessando os pares
+contatos["bruna@gmail.com"]["idade"] = "22"  # atribuindo novo valor dentro de um dicionário aninhado
 print(contatos["gabriel@gmail.com"]["telefone"])
 print(contatos["bruna@gmail.com"]["idade"])
 print(contatos["bruna@gmail.com"])
@@ -49,7 +49,8 @@ print(contatos.get("gabriel@gmail.com", {}).get("telefone", {}))
 print(contatos.items())  # retorna todos as chaves com valores dentro de um dicionário, sendo aninhado ou não
 
 # {}.keys
-print(contatos.keys())  # retorna todas as chaves dentro de um dicionário, mas não se houverem dicionários aninhados
+print(contatos.keys())  # retorna todas as chaves dentro de um dicionário, mas se houverem dicionários aninhados eles
+# não serão mostrados, apenas as chaves da "primeira camada"
 
 # {}.pop
 print(contatos.pop("gabriel@gmail.co", "chave não encontrada"))  # remove do dicionário a chave especificada e os
@@ -62,3 +63,24 @@ print(f"removi isso {contatos.popitem()}")  # remove um item ALEATÓRIO do dicio
 print(contatos.keys())
 
 # {}.setdefault
+console = {"nome": "xbox", "telefone": "360"}
+console.setdefault("nome", "ps3")  # procura uma chave e se ela existir, será mantido o seu valor atual
+console.setdefault("idade", "12")  # se a chave informada não for encontrada no dicionário, ela será criada e o valor
+# informado será atribuido a ela
+print(console)
+
+# {}.update
+contatos.update({"gabriel@gmail.com": {"nome": "Gabigol"}})  # sobreescreve as chaves com os valores informados
+contatos.update({"joao@gmail.com": {"nome": "João", "telefone": "3322-8181"}})  # se a chave informada não existir,
+# uma nova chave será criada com os valores informados
+print(contatos)
+
+# {}.values
+print(contatos.values())  # retorna todos os valores dentro de um dicionário
+
+# {}.in
+resultado = "gabriel@gmail.com" in contatos  # verifica se a chave informada contém no dicionário
+resultado2 = "telefone" in contatos["gabriel@gmail.com"]  # utilizando um dicionário aninhado e fazendo a verificação
+# com a chave informada
+print(resultado)
+print(resultado2)
