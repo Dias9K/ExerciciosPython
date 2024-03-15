@@ -82,3 +82,18 @@ exibir_resultado(10, 20, somar)
 # internamente, essa função que foi passada no parâmetro será substituida pela função atribuída no método e retorna a
 # variável que recebe a mesma
 exibir_resultado(10, 20, subtrair)
+
+# forma correta de executar a função:
+# def criar_carro(modelo, ano, placa, /, marca, motor, combustivel)
+# criar_carro("Palio", 1999, "ABC-1234", marca="Fiat", motor="1.0", combustivel="Gasolina")
+# ANTES DA / quer dizer que os parâmetros devem ser chamados atribuindo apenas o valor
+# DEPOIS DA / quer dizer que os parâmetros devem ser chamados atribuindo "chave" e valor
+
+# def criar_carro(*, modelo, ano, placa, marca, motor, combustivel)
+# DEPOIS DE "*," quer dizer que todos os parâmetros devem ser chamados atribuindo "chave" e valor OBRIGATORIAMENTE
+
+# def funcao(*args, **kw):,
+# qual será o valor de args e kw ao executar:
+# funcao("python", 2022, curso="dio")
+
+# args = ("python", 2022)  e kw = {"curso": "dio"}
