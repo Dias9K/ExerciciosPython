@@ -52,12 +52,33 @@ def salvar_carro(marca, modelo, ano, placa):
     print(f"carro inserido : {marca}, {modelo}, {ano}, {placa}")
 
 
-# sintaxe porca que permite dados de qualquer tipo serem inseridos sem nenhuma restrição
-
 # argumentos nomeados
 salvar_carro("fiat", "palio", 1999, "ABC-1234")
 salvar_carro(placa="abc-1234", marca="fiat", ano=1999, modelo="palio")
 salvar_carro(**{"marca": "fiat", "modelo": "palio", "ano": 1999, "placa": "ABC-4321"})
 
+
 # args e kwargs é possível combinar parâmetros obrigatórios com args e kwargs. quando esses são definidos (*args e
 # **kwargs), o método recebe os valores como tupla e dicionário respectivamente (?????????)
+
+
+def somar(a, b):
+    return a + b
+
+
+def subtrair(a, b):
+    return a - b
+
+
+def exibir_resultado(a, b, funcao):
+    resultado = funcao(a, b)  # atribuindo uma função a uma variável
+    print(f"O resultado da operação é: {resultado}")
+
+
+# em pytho, tudo é objeto, assim como as funções, que são objetos de primeira classe. funções podem ser atribuidas
+# para variáveis, passá-las como parâmetro para funções, usá-las como valores em estruturas de dados (listas, tupla,
+# dicionários, etc) e usar como valor de retorno para uma função (closure)
+exibir_resultado(10, 20, somar)
+# internamente, essa função que foi passada no parâmetro será substituida pela função atribuída no método e retorna a
+# variável que recebe a mesma
+exibir_resultado(10, 20, subtrair)
