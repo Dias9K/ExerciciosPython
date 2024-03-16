@@ -16,7 +16,7 @@ quantidade_passos = int(input())
 #         quantidade_passos += 1
 # A SINTAXE DESSA LINGUAGEM É UMA MERDA, FODA-SE A SUA DELIMITAÇÃO DE BLOCO POR IDENTAÇÃO!
 # QUEM NASCEU PRA SER PYTHON NUNCA VAI SER JAVA!!
-if quantidade_passos == 0:
+if quantidade_passos <= 0:
     print("Nenhum passo dado na floresta.")
 elif quantidade_passos > 0:
     for i in range(1, quantidade_passos):
