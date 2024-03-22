@@ -12,8 +12,8 @@
 multiplicando = int(input("Escolha um multiplicando entre 1 a 10 para ver a sua tabuada: "))
 multiplicador = 1
 
-print(f"TABUADA DE {multiplicando}".center(20, "="))
 if (multiplicando > 0) and (multiplicando <= 10):
+    print(f"TABUADA DE {multiplicando}".center(20, "="))
     while multiplicador <= 10:
         produto = multiplicando * multiplicador
         print(f"{multiplicando} x {multiplicador} = {produto}")
