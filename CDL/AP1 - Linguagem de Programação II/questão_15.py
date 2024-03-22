@@ -8,10 +8,13 @@
 # ...
 # 5 X 10 = 50.
 
-multiplicando = int(input("Escolha um número entre 1 a 10 para ver a sua tabuada: "))
+multiplicando = int(input("Escolha um multiplicando entre 1 a 10 para ver a sua tabuada: "))
 multiplicador = 1
 
-while multiplicador <= 10:
-    produto = multiplicando * multiplicador
-    print(f"{multiplicando} x {multiplicador} = {produto}")
-    multiplicador = multiplicador + 1
+if (multiplicando > 0) and (multiplicando <= 10):
+    while multiplicador <= 10:
+        produto = multiplicando * multiplicador
+        print(f"{multiplicando} x {multiplicador} = {produto}")
+        multiplicador = multiplicador + 1
+else:
+    print("O multiplicando inserido é inválido! Por favor, escolha um número de 1 a 10.")
