@@ -9,21 +9,9 @@
 # ...
 # 5 X 10 = 50.
 
-# multiplicando = int(input("Escolha um multiplicando entre 1 a 10 para ver a sua tabuada: "))
-# multiplicador = 1
-#
-# if (multiplicando > 0) and (multiplicando <= 10):
-#     print(f"TABUADA DE {multiplicando}".center(20, "="))
-#     while multiplicador <= 10:
-#         produto = multiplicando * multiplicador
-#         print(f"{multiplicando} x {multiplicador} = {produto}")
-#         multiplicador = multiplicador + 1
-# else:
-#     print("O multiplicando inserido é inválido! Por favor, escolha um número de 1 a 10.")
-# TODO analisar os dois códigos e ver onde está o loop verificador do código abaixo
 multiplicando = 0
 while (multiplicando <= 0) or (multiplicando > 10):
-    multiplicando = int(input("Escolha um multiplicando entre 1 a 10 para ver a sua tabuada: "))
+    multiplicando = int(input("Escolha um multiplicando entre 1 e 10 para ver a sua tabuada: "))
     multiplicador = 1
 
     if (multiplicando > 0) and (multiplicando <= 10):
@@ -31,6 +19,6 @@ while (multiplicando <= 0) or (multiplicando > 10):
         while multiplicador <= 10:
             produto = multiplicando * multiplicador
             print(f"{multiplicando} x {multiplicador} = {produto}")
-            multiplicador = multiplicador + 1
+            multiplicador += 1
     else:
         print("O multiplicando inserido é inválido! Por favor, escolha um número de 1 a 10.")
