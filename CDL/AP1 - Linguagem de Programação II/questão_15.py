@@ -11,7 +11,7 @@
 
 multiplicando = 0
 while (multiplicando <= 0) or (multiplicando > 10):
-    multiplicando = int(input("Escolha um multiplicando entre 1 e 10 para ver a sua tabuada: "))
+    multiplicando = int(input("Digite um multiplicando entre 1 e 10 para ver a sua tabuada: "))
     multiplicador = 1
 
     if (multiplicando > 0) and (multiplicando <= 10):
