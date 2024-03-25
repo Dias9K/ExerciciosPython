@@ -14,3 +14,9 @@ for i in range(5):
 print(f"Valores contidos no vetor = {vetor}\n"
       f"Soma dos valores contidos no vetor = {sum(vetor)}\n"
       f"Multiplicação dos valores contidos no vetor = {reduce(operator.mul, vetor)}\n")
+
+# TODO terminar isso
+print("teste".center(50, "#"))
+teste_multiplicador = 0
+for m in len(range(vetor)):
+    teste_multiplicador * m
