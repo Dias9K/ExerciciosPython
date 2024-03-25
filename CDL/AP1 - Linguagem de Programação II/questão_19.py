@@ -15,5 +15,5 @@
 lata_18L = 80.00
 galao_3_6L = 25.00
 print("Color Tintas Store".center(50, "="),
-      "\nPor favor")
-metros_quadrados = float(input("Digite os metros quadrados da área que você deseja pintar: "))
+      "\nNossa loja está com promoções imperdíveis")
+metros_quadrados = float(input("Digite em metros quadrados a área a ser pintada: "))
