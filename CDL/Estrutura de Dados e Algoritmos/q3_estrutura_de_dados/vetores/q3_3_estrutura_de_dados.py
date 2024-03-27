@@ -1,0 +1,1 @@
+# Implemente um algoritmo para verificar se um vetor está ordenado de forma crescente.
