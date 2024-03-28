@@ -5,22 +5,24 @@
 
 numero = int(input("Digite um número inteiro para verificar se ele é primo ou não: "))
 
-if numero <= 1:
-    print("O número não é primo.")
-elif numero == 2:
-    print("O número 2 é o único número primo que é par.")
+if numero < 0:
+    print(f"Digite apenas números inteiros e positivos.")
+elif numero <= 1:
+    print(f"O número {numero} não é primo.")
 
-elif numero % 2 == 0:
-    print("O número não é primo.")
-    for i in range(3, int(numero ** 0.5) + 1, 2):
-        if numero % i == 0:
-            print("O número não é primo")
+else:
+    if numero == 2:
+        print(f"O {numero} é o único número par primo")
+    impar = 3
+    while impar < numero:
+        if numero % impar == 0:
             break
+        impar += 2
+    if impar == numero:
+        print(f"O {numero} é primo")
     else:
-        print("O numero é primo")
-
+        print(f"O {numero} não é primo, pois é divisível por {impar}")
 '''
-https://python.nilo.pro.br/exercicios3/capitulo%2005/exercicio-05-23.html
 def eh_primo(n):  # Define uma função chamada 'eh_primo' que recebe um argumento 'n'.
     if n < 2:  # Se 'n' for menor que 2,
         return False  # retorna 'False'. Isso porque números menores que 2 não são primos.
