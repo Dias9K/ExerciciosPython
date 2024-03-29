@@ -7,19 +7,20 @@ numero = int(input("Digite um número inteiro para verificar se ele é primo ou 
 
 if numero < 0:
     print(f"Digite apenas números inteiros, positivos e maiores do que zero.")
-elif numero == 1 or numero == 0:
+elif numero == 1 or numero == 0:  # 0 e 1 não são primos
     print(f"O número {numero} não é primo.")
-elif numero == 2:
-    print("O número 2 é o único par que é primo")
 else:
-    primo = 3
-    while primo < numero:
-    if numero % 2 == 0:
-
-        if numero % primo == 0:
-            break
-        primo += 2
-    if primo == numero:
-        print(f"O {numero} é primo")
+    if numero == 2:  # 2 é o único par primo
+        print("O número 2 é primo")
+    elif numero % 2 == 0:  # verificando se o número é par e dizendo que não é primo
+        print(f"O {numero} não é primo, apenas 2 é um número par e primo")
     else:
-        print(f"O {numero} não é primo, pois é divisível por {primo}")
+        primo = 3
+        while primo < numero:
+            if numero % primo == 0:
+                break
+            primo += 2
+        if primo == numero:
+            print(f"O {numero} é primo")
+        else:
+            print(f"O {numero} não é primo, pois é divisível por {primo}")  # TODO colocar todos os números divisíveis
