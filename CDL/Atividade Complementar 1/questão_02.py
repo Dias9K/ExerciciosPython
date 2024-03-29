@@ -7,13 +7,15 @@ numero = int(input("Digite um número inteiro para verificar se ele é primo ou 
 
 if numero < 0:
     print(f"Digite apenas números inteiros, positivos e maiores do que zero.")
-elif numero == 1 or numero == 0 or numero == 4:
+elif numero == 1 or numero == 0:
     print(f"O número {numero} não é primo.")
 elif numero == 2:
     print("O número 2 é o único par que é primo")
 else:
     primo = 3
     while primo < numero:
+    if numero % 2 == 0:
+
         if numero % primo == 0:
             break
         primo += 2
