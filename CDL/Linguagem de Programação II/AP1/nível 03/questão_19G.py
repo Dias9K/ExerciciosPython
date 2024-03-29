@@ -1,5 +1,3 @@
-import math
-
 # Questão 19 – (1 ponto)
 # GABRIEL MAGALHÃES DIAS
 # Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros
@@ -14,6 +12,7 @@ import math
 # - misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e
 # sempre arredonde os valores para cima, isto é, considere latas cheias.
 
+import math
 preco_lata_18L = 80
 litros_lata = 18
 preco_galao_3_6L = 25

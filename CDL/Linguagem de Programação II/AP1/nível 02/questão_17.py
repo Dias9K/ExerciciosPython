@@ -1,10 +1,10 @@
+# Questão 17 – (0,75 pontos)
+# Gabriel Magalhães Dias
+# Faça um Programa que leia um vetor de 5 números inteiros, mostre a soma, a multiplicação e
+# os números.
 import operator
 from functools import reduce
 
-# Questão 17 – (0,75 pontos)
-# GABRIEL MAGALHÃES DIAS
-# Faça um Programa que leia um vetor de 5 números inteiros, mostre a soma, a multiplicação e
-# os números.
 
 vetor = []
 for i in range(5):

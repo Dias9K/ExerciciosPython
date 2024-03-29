@@ -1,10 +1,14 @@
-#Questão 25
-#Gabriel Levi Lima Rodrigues
-#Impporta a biblioteca calendario
+# Questão 25 – (1 ponto)
+# Gabriel Levi Lima Rodrigues
+# Escreva  um  programa que pergunte  o depósito inicial e  a taxa de juros de uma poupança.
+# Exiba os valores mês a mês para os 24 primeiros meses. Escreva o total ganho com juros no
+# período.
+# Impporta a biblioteca calendario
 import calendar
 import datetime
+
 '''---------------------------------------------------------------------------'''
-print('=' * 10,'Banco Tabajara', '=' * 10)
+print('=' * 10, 'Banco Tabajara', '=' * 10)
 titular = input('Nome do Depositante: ')
 data_deposito_str = input('Informe a data de deposito (Formato: dd/mm/aaaa):')
 deposito = float(input('Digite o valor do depósito inicial: R$'))
@@ -18,7 +22,7 @@ except ValueError:
     print('Formato de data inválido. Por favor, insira a data no formato correto.')
     exit()
 '''---------------------------------------------------------------------------'''
-#Verifica se todos os caracteres da variavel titlar são letras
+# Verifica se todos os caracteres da variavel titlar são letras
 if not titular.replace(' ', '').isalpha():
     print('Por favor, insira apenas letras para o seu nome do depositante.')
     exit()
@@ -30,11 +34,11 @@ anos = meses // 12
 meses_restante = meses % 12
 '''---------------------------------------------------------------------------'''
 print('=== * Extrato * ===')
-for mes in range (1, meses + 1):
+for mes in range(1, meses + 1):
     juros = saldo * juros_decimal
     saldo += juros
     dias_do_mes = calendar.monthrange(data_deposito.year, data_deposito.month)[1]
-    data_deposito += datetime.timedelta(days = dias_do_mes)
+    data_deposito += datetime.timedelta(days=dias_do_mes)
     print('{} - Saldo: R$ {:.2f}'.format(data_deposito.strftime('%d/%m/%Y'), saldo))
 
 juros_total = saldo - deposito
