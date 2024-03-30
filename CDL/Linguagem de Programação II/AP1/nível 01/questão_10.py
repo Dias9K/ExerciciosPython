@@ -1,7 +1,7 @@
-# Questão 10 – (0,5 pontos)
 # Cristian Ribeiro Calaço
+# Questão 10 – (0,5 pontos)
 # Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
-
+# TODO colocar apenas um valor e verificar se é positivo ou negativo, não maior ou menor
 num_1 = int(input('Digite o primeiro numero: '))
 num_2 = int(input('Digite o segundo numero: '))
 

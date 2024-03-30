@@ -1,5 +1,5 @@
-# Questão 03 – (0,5 pontos)
 # Cristian Ribeiro Calaço
+# Questão 03 – (0,5 pontos)
 # Faça um Programa que peça as 4 notas bimestrais e mostre a média.
 
 n1 = float(input("Digite a Primeira nota:"))
