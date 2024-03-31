@@ -1,5 +1,5 @@
-# Questão 12 – (0,75 pontos)
 # Gabriel Magalhães Dias
+# Questão 12 – (0,75 pontos)
 # João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o
 # rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o
 # estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma
@@ -7,7 +7,7 @@
 # variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade
 # de quilos além do limite e na variável multa o valor da multa que João deverá pagar. Imprima
 # os dados do programa com as mensagens adequadas
-
+# TODO continuar a analisar daqui
 peso_peixes = float(input("Digite a quantidade de quilos em peixes que João fisgou em sua pesca diária: "))
 
 if peso_peixes > 50.0:

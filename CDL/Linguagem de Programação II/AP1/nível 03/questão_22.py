@@ -1,5 +1,5 @@
+# Gabriel Magalhães Dias
 # Questão 22 – (1 ponto)
-# GABRIEL MAGALHÃES DIAS
 # Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime.
 # TODO fazer usando listas ?
 # As perguntas são:
