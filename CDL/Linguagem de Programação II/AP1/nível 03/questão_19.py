@@ -11,7 +11,6 @@
 # - comprar apenas galões de 3,6 litros;
 # - misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e
 # sempre arredonde os valores para cima, isto é, considere latas cheias.
-
 import math
 
 area = float(input('Informe em metros quadrados da área a ser pintada: '))
