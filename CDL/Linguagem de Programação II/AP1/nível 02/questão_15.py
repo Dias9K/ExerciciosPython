@@ -10,7 +10,7 @@
 # 5 X 10 = 50.
 
 multiplicando = 0
-while (multiplicando <= 0) or (multiplicando > 10):
+while (multiplicando <= 0) or (multiplicando > 10):  # forçando o laço a executar apenas com a entrada entre 1-10
     multiplicando = int(input("Digite um multiplicando entre 1 e 10 para ver a sua tabuada: "))
     multiplicador = 1
 
