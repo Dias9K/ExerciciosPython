@@ -1,6 +1,6 @@
 # Gabriel Levi Lima Rodrigues
 # Questão 25 – (1 ponto)
-# Escreva  um  programa que pergunte  o depósito inicial e  a taxa de juros de uma poupança.
+# Escreva um programa que pergunte o depósito inicial e a taxa de juros de uma poupança.
 # Exiba os valores mês a mês para os 24 primeiros meses. Escreva o total ganho com juros no
 # período.
 # Impporta a biblioteca calendario
