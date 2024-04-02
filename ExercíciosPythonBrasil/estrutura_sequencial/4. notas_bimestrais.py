@@ -10,4 +10,4 @@ print(f"A sua média é: {media}")
 
 media_string = str(media)
 print(type(media_string))
-## testando a conversão de tipos
+# testando a conversão de tipos

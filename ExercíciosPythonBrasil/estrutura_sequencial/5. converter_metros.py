@@ -4,4 +4,4 @@ metros = float(input("Digite a quantidade de metros a serem convertido em centí
 
 centimetros = metros * 100
 
-print(f"Quandidade em centímetros: {centimetros}"+ " cm")
+print(f"Quandidade em centímetros: {centimetros}" + " cm")
