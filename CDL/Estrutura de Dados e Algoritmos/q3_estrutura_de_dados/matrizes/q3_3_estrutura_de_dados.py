@@ -1,0 +1,1 @@
+# Crie um programa que calcule a média dos elementos em uma matriz.
