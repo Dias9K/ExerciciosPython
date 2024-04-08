@@ -1,4 +1,3 @@
-# TODO fazer essa chibata rodar bem
 # Implemente um algoritmo para encontrar o segundo maior valor em um vetor.
 vetor = []
 
@@ -15,4 +14,5 @@ for valor in vetor:
     elif valor > segundo_maior and valor != maior:
         segundo_maior = valor
 
-print(f"Números inseridos no vetor {vetor}\nE o seu segundo maior elemento do vetor é = {segundo_maior}")
+print(f"Números inseridos no vetor {vetor}\nO primeiro maior valor é = {maior}\nE o seu segundo maior elemento do "
+      f"vetor é = {segundo_maior}")
