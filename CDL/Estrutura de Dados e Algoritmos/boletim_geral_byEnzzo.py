@@ -1,11 +1,15 @@
 import pandas as pd
 import os
+
 os.system('cls')
 
 mat = input('Digite a disciplina para por as notas: ').upper()
+
+
 def head(mat):
-    print('|'+'-'*15+f' BOLETIM GERAL ({mat}) '+'-'*15+'|\n')
-    
+    print('|' + '-' * 15 + f' BOLETIM GERAL ({mat}) ' + '-' * 15 + '|\n')
+
+
 os.system('cls')
 head(mat)
 
@@ -30,7 +34,7 @@ while i <= num_alunos:
     print('  ')
     alunos.append(aluno)
     notas.append(nota)
-    i+=1
+    i += 1
     os.system('cls')
     head(mat)
 
@@ -41,9 +45,9 @@ for i in range(num_alunos):
 
 print('\n--------------- DATAFRAME ---------------\n')
 df = pd.DataFrame({
-        'ALUNO': alunos,
-        'NOTA': notas
-    })
+    'ALUNO': alunos,
+    'NOTA': notas
+})
 print(df)
 
 print('\n-------------------\n')
@@ -55,8 +59,8 @@ if esp.lower() == 's':
     print(df)
 
     linha = int(input('\nDigite o numero da linha correspondente ao indicie: '))
-    if linha < 0 or linha > len(df)-1:
-        while linha < 0 or linha > len(df)-1:
+    if linha < 0 or linha > len(df) - 1:
+        while linha < 0 or linha > len(df) - 1:
             os.system('cls')
             head(mat)
             print(df)
@@ -79,8 +83,8 @@ if esp.lower() == 's':
             print(df)
 
             linha = int(input('\nDigite o numero da linha correspondente ao indicie:  '))
-            if linha < 0 or linha > len(df)-1:
-                while linha < 0 or linha > len(df)-1:
+            if linha < 0 or linha > len(df) - 1:
+                while linha < 0 or linha > len(df) - 1:
                     os.system('cls')
                     head(mat)
                     print(df)
