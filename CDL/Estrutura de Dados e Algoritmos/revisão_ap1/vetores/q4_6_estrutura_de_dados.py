@@ -1,0 +1,1 @@
+# Implemente um algoritmo para encontrar o segundo maior valor em um vetor.

@@ -1,3 +1,6 @@
+#  Crie um programa que dado um vetor, devolva 2 outros vetores com o quadrado
+# e o cubo dos valores do vetor inicial.
+
 matriz_1 = [[1, 20, 30],
             [20, 30, 1]]
 matriz_2 = [[10, 30, 2],
