@@ -7,6 +7,8 @@ for i in range(5):
 
 maior = float('-inf')
 segundo_maior = float('-inf')
+# iniciando as variáveis maiores com os menores valores possível (infinito)
+
 for valor in vetor:
     if valor > maior:
         segundo_maior = maior
