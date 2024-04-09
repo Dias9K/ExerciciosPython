@@ -1,4 +1,5 @@
 # Escreva um programa que encontre o maior e o menor valor em um vetor.
+
 vetor = [2, 5, 7, 10, 6, 18]
 
 maior = vetor[0]
