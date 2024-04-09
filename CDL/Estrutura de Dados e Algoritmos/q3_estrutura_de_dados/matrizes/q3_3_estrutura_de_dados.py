@@ -10,4 +10,4 @@ for i in range(3):
         quantidade_elementos += 1
         total_elementos += matriz[i][j]
 print(total_elementos)
-print(f"A média da matriz é {total_elementos/quantidade_elementos}")
+print(f"A média da matriz é {total_elementos / quantidade_elementos}")
