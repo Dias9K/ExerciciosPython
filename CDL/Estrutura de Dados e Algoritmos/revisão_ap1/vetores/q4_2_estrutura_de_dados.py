@@ -1,3 +1,6 @@
+# Crie um programa que dado um vetor, devolva 2 outros vetores com o quadrado
+# e o cubo dos valores do vetor inicial.
+
 vetor = []
 quadrado = []
 cubo = []

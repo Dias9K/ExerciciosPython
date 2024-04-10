@@ -1,3 +1,6 @@
+# Crie um programa que conte o número de ocorrências de um determinado
+# elemento em um vetor.
+
 import random
 
 vetor = []
