@@ -5,10 +5,10 @@
 # limite e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens
 # adequadas.
 
-try:  # tratamento necessário para garantir que a entrada seja sempre um valor e o programa não quebre, caso incorreta
+try:
     peso_peixes = float(input("Digite a quantidade de quilos em peixes que João fisgou em sua pesca diária: "))
     if peso_peixes > 50.0:
-        excesso = peso_peixes - 50.0  # atribuído apenas caso ele ultrapasse o limite de 50kg
+        excesso = peso_peixes - 50.0
         print(f"João ultrapassou {excesso:.2f}kg da sua cota e foi multado!")
         valor_multa = 4.0 * excesso
         print(f"O regulamento de pesca do estado de São Paulo determina que se deve pagar uma multa de R$ 4,00 "
