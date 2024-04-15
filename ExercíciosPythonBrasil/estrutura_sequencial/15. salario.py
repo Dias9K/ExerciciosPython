@@ -12,3 +12,5 @@
 # - Sindicato ( 5%) : R$
 # = Salário Liquido : R$
 # Obs.: Salário Bruto - Descontos = Salário Líquido.
+
+ganho_hora = float(input("Quanto você ganha por hora?"))
