@@ -14,3 +14,4 @@
 # Obs.: Salário Bruto - Descontos = Salário Líquido.
 
 ganho_hora = float(input("Quanto você ganha por hora?"))
+horas_mes = int(input("Quantas horas você trabalha por mês?"))
