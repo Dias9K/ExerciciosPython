@@ -26,3 +26,12 @@ while menu != 4:
             print(f"{item} == {quantidade}")
         elif item_checado != item:
             print(f"Item não encontrado no carrinho")
+    elif menu == 3:
+        item_checado = input("Digite o item para ver a o seu valor total: ")
+        if item_checado == item:
+            print(f"{item} == {valor_unitario*quantidade}")
+        elif item_checado != item:
+            print(f"Item não encontrado no carrinho")
+    else:
+        print("Obrigado e volte sempre!".center(40,"-"))
+        break
