@@ -1,13 +1,13 @@
 carrinho = []
 menu = 0
-print("MENU".center(20, ":"), "\n[1] Adicionar novo item ao carrinho\n"
-                              "[2] Checar quantidade de um determinado item\n"
-                              "[3] Checar valor total das unidades de um determinado item\n"
-                              "[4] Sair")
 item = ""
 quantidade = 0
 valor_unitario = 0
 while menu != 4:
+    print("MENU".center(20, ":"), "\n[1] Adicionar novo item ao carrinho\n"
+                                  "[2] Checar quantidade de um determinado item\n"
+                                  "[3] Checar valor total das unidades de um determinado item\n"
+                                  "[4] Sair")
     try:
         menu = int(input("Digite uma opção: "))
     except ValueError:
@@ -19,13 +19,13 @@ while menu != 4:
             valor_unitario = float(input(f"Digite o valor da unidade de {item}: "))
             carrinho.append([item, quantidade, valor_unitario])
         else:
-            print("É obrigatório digitar um item!")
+            print("ERRO! É obrigatório digitar um item!")
     elif menu == 2:
         item_checado = input("Digite o item a ser checado: ")
-        if item_checado == item:
+        if len(item) == 0 or item_checado != item:
+            print("O carrinho de compras está vazio ou o item digitado não foi encontrado")
+        elif item_checado == item:
             print(f"{item} == {quantidade}")
-        elif item_checado != item:
-            print(f"Item não encontrado no carrinho")
     elif menu == 3:
         item_checado = input("Digite o item para ver a o seu valor total: ")
         if item_checado == item:
