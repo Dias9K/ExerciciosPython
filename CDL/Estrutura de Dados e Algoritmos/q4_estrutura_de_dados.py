@@ -1,7 +1,9 @@
-# ordenar o vetor sem utilizar o método .sort()
-vetor = [2, 3, 1, 5, 4]
+import random
 
-# parece um bubble sort
+vetor = []
+for i in range(0, 20):
+    vetor.append(random.randint(1, 20))
+
 for i in range(len(vetor)):
     for j in range(i+1, len(vetor)):
         if vetor[i] > vetor[j]:
