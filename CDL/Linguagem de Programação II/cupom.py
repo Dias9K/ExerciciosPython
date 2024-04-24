@@ -19,6 +19,7 @@ while menu != 5:
             quantidade = int(input(f"Digite quantas unidades de {item} você comprou: "))
             valor_unitario = float(input(f"Digite o valor da unidade de {item}: "))
             carrinho.append([item, quantidade, valor_unitario])
+            print(f"Itens adicionados no carrinho: {carrinho}")
         else:
             print("ERRO! É obrigatório digitar um item!")
 
@@ -35,6 +36,9 @@ while menu != 5:
             print(f"O total de {item} é {quantidade * valor_unitario}")
         elif item_checado != item:
             print(f"Item não encontrado no carrinho")
+
+        # elif menu == 4:
+
     else:
         print("Obrigado e volte sempre!".center(40, "-"))
         break
