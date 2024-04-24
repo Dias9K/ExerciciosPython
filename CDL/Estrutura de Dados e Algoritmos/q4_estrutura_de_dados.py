@@ -1,3 +1,4 @@
+# CÓDIGO CORRIGIDO 100%
 import random
 
 vetor_desordenado = []
