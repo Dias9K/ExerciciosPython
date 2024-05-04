@@ -1,15 +1,17 @@
-# import random
+import random
 
 numeros_disponiveis = []
 quantidade_disponiveis = int(input("Quantos números estão disponíveis na rifa?\n"))
 for i in range(quantidade_disponiveis):
-    disponiveis = int(input("Digite o número disponível na rifa"))
-    numeros_disponiveis.append(disponiveis)
+    print("Digite quais números estão disponíveis na rifa")
+    numeros = int(input())
+    numeros_disponiveis.append(numeros)
 quantidade_pontos = int(input("Quantos pontos você quer colocar na rifa?"))
 
 numeros_escolhidos = []
-# TODO gerar números aleatórios
-
+for i in range(len(numeros_disponiveis)):
+    numeros_escolhidos.append(random)
+# TODO gerar números aleatórios com base nos números disponíveis
 # for i in range(6):
 #     numeros_escolhidos.append(numeros_disponiveis[random.randint(0, len(numeros_disponiveis) - 1)])
 #     print(f"{i+1} número escolhido {numeros_escolhidos[i]}")
