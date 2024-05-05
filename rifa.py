@@ -1,5 +1,7 @@
+# TODO mostrar pro meu parceiro enzzo e ver o que ele acha do código
 import random
-
+# um gerador de números bastante simplório para que eu não tenha mais problemas de indecisão ao escolher números
+# para colocar pontos em uma rifa ou algo do tipo
 numeros_disponiveis = []
 quantidade_disponiveis = int(input("Quantos números estão disponíveis na rifa?\n"))
 
