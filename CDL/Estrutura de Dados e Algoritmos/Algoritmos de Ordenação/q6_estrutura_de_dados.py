@@ -54,14 +54,14 @@ def insertion_sort(arr):
 # chamada da função bubble sort
 print(bubble_sort(vetor_bubble))
 bubble_time = time.time()
-print("Tempo de execução do algoritmo bubble_sort = {:.2f}s".format(bubble_time - inicio_time))
+print("Tempo de execução do algoritmo bubble sort = {:.2f}s".format(bubble_time - inicio_time))
 
 # chamada da função selection sort
 print(selection_sort(vetor_selection))
 selection_time = time.time()
-print("Tempo de execução do algoritmo selection_sort = {:.2f}s".format(selection_time - inicio_time))
+print("Tempo de execução do algoritmo selection sort = {:.2f}s".format(selection_time - inicio_time))
 
 # chamada da função insertion sort
 print(insertion_sort(vetor_insertion))
 insertion_time = time.time()
-print("Tempo de execução do algoritmo insertion_sort = {:.2f}s".format(insertion_time - inicio_time))
+print("Tempo de execução do algoritmo insertion sort = {:.2f}s".format(insertion_time - inicio_time))
