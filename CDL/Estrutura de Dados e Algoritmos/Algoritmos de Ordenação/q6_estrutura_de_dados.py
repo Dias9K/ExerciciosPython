@@ -5,17 +5,17 @@ inicio_time = time.time()
 
 # atribuição dos 1000 elementos no vetor usado pelo bubble sort
 vetor_bubble = []
-for i in range(0, 1000):
+for i in range(0, 10000):
     vetor_bubble.append(random.randint(1, 1000))
 
 # atribuição dos 1000 elementos no vetor usado pelo selection sort
 vetor_selection = []
-for i in range(0, 1000):
+for i in range(0, 10000):
     vetor_selection.append(random.randint(1, 1000))
 
 # atribuição dos 1000 elementos no vetor usado pelo insertion sort
 vetor_insertion = []
-for i in range(0, 1000):
+for i in range(0, 10000):
     vetor_insertion.append(random.randint(1, 1000))
 
 
@@ -40,22 +40,28 @@ def selection_sort(arr):
 
 def insertion_sort(arr):
     # função com insertion
+    for i in range(len(arr)):
+        key = arr[i]
+        j = i - 1
+
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+            arr[j + 1] = key
+    return arr
 
 
 # chamada da função bubble sort
-bubble_sort(vetor_bubble)
 print(bubble_sort(vetor_bubble))
 bubble_time = time.time()
 print("Tempo de execução do algoritmo bubble_sort = {:.2f}s".format(bubble_time - inicio_time))
 
 # chamada da função selection sort
-selection_sort(vetor_selection)
 print(selection_sort(vetor_selection))
 selection_time = time.time()
 print("Tempo de execução do algoritmo selection_sort = {:.2f}s".format(selection_time - inicio_time))
 
 # chamada da função insertion sort
-inserton_sort(vetor_insertion)
 print(insertion_sort(vetor_insertion))
 insertion_time = time.time()
-print("Tempo de execução do algoritmo selection_sort = {:.2f}s".format(insertion_time - inicio_time))
+print("Tempo de execução do algoritmo insertion_sort = {:.2f}s".format(insertion_time - inicio_time))
