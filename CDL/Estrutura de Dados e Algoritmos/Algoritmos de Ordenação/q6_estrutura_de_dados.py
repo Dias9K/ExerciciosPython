@@ -41,6 +41,7 @@ def selection_sort(arr):
 def insertion_sort(arr):
     # função com insertion
 
+
 # chamada da função bubble sort
 bubble_sort(vetor_bubble)
 print(bubble_sort(vetor_bubble))
