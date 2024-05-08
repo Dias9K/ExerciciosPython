@@ -5,17 +5,17 @@ inicio_time = time.time()
 
 # atribuição dos 1000 elementos no vetor usado pelo bubble sort
 vetor_bubble = []
-for i in range(0, 10000):
+for i in range(0, 1000):
     vetor_bubble.append(random.randint(1, 1000))
 
 # atribuição dos 1000 elementos no vetor usado pelo selection sort
 vetor_selection = []
-for i in range(0, 10000):
+for i in range(0, 1000):
     vetor_selection.append(random.randint(1, 1000))
 
 # atribuição dos 1000 elementos no vetor usado pelo insertion sort
 vetor_insertion = []
-for i in range(0, 10000):
+for i in range(0, 1000):
     vetor_insertion.append(random.randint(1, 1000))
 
 
