@@ -11,5 +11,5 @@ lista_2 = [5, 4, 7, 8, 10]
 lista_1 = set(lista_1)
 lista_2 = set(lista_2)
 print(f"valores comuns das duas listas\n{lista_1.intersection(lista_2)}")
-print(f"valores existentes apenas na primeira lista")
-# TODO método <set>.difference
+print(f"valores existentes apenas na primeira lista\n{lista_1.difference(lista_2)}")
+print(f"valores que existem apenas na segunda lista\n{lista_2.difference(lista_1)}")
