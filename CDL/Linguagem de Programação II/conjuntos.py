@@ -14,3 +14,4 @@ print(f"valores comuns das duas listas\n{lista_1.intersection(lista_2)}")
 print(f"valores existentes apenas na primeira lista\n{lista_1.difference(lista_2)}")
 print(f"valores que existem apenas na segunda lista\n{lista_2.difference(lista_1)}")
 print(f"lista com os valores não repetidos das duas listas\n{lista_1.union(lista_2)}")
+# TODO e) a primeira lista sem os valores repetidos da segunda lista.
