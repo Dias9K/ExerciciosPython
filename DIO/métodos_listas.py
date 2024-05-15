@@ -16,9 +16,12 @@ contagem = {}
 for fruta in frutas:  # itera sobre a lista de frutas
     if fruta in contagem:  # se a fruta em questão estiver no dicionário contagem, é somado +1
         contagem[fruta] += 1
-    else:  # se não houver, é atribuído um
+    else:  # se não houver, é atribuído um apenas um para contabilizar
         contagem[fruta] = 1
-for fruta, quantidade in contagem
+for fruta, quantidade in contagem.items():  # o método items retorna uma lista de tuplas, onde cada tupla consiste em
+    # um par (chave, valor), as chaves e valores serão armazenadas nas variáveis temporárias fruta e quantidade
+    # respectivamente
+    print(f"A fruta {fruta} aparece {quantidade} vez(es) na lista.")
 
 # print(frutas.count("laranja"))  # retorna quantas vezes um elemento se repete na lista, se o elemento em questão
 # for uma string
