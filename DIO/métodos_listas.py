@@ -1,17 +1,20 @@
 # [].copy()
 lista1 = [1, "string", [10, 40, 80]]
 lista2 = lista1.copy()  # copia a todos os elementos da lista
-print(
-    id(lista1), id(lista2)
-)  # comprovando que são duas instâncias diferentes, mas com os mesmos elementos
-lista2[0] = 10
+print("ID",
+      id(lista1), id(lista2)
+      )  # o método id serve para retornar uma espécie de "hash" comprovando que são duas instâncias diferentes,
+# mas com os mesmos elementos
+lista2[0] = 10  # substituição do primeiro elemento da lista2 para 10
 print(lista1)
 print(lista2)
 
 # [].count()
 frutas = ["laranja", "morango", "limão", "laranja", "banana"]
-print(frutas.count("laranja"))  # retorna quantas vezes um elemento se repete na lista
-print(frutas.count("morango"))
+for fruta in frutas:
+    #TODO continuar aquiprint(fruta.count(fruta))
+# print(frutas.count("laranja"))  # retorna quantas vezes um elemento se repete na lista
+# print(frutas.count("morango"))
 
 # [].extend()
 linguagens = ["python", "java"]
@@ -34,7 +37,6 @@ linguagens.sort(
 )  # função anônima que ordena os elementos de acordo com a sua quantidade de caracteres e com a ordem alfabética
 # descendente
 print(linguagens)
-
 
 # [].index()
 print(
