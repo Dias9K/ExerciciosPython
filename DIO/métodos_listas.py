@@ -11,9 +11,17 @@ print(lista2)
 
 # [].count()
 frutas = ["laranja", "morango", "limão", "laranja", "banana"]
-for fruta in frutas:
-    #TODO continuar aquiprint(fruta.count(fruta))
-# print(frutas.count("laranja"))  # retorna quantas vezes um elemento se repete na lista
+contagem = {}
+
+for fruta in frutas:  # itera sobre a lista de frutas
+    if fruta in contagem:  # se a fruta em questão estiver no dicionário contagem, é somado +1
+        contagem[fruta] += 1
+    else:  # se não houver, é atribuído um
+        contagem[fruta] = 1
+for fruta, quantidade in contagem
+
+# print(frutas.count("laranja"))  # retorna quantas vezes um elemento se repete na lista, se o elemento em questão
+# for uma string
 # print(frutas.count("morango"))
 
 # [].extend()
