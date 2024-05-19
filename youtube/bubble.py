@@ -1,4 +1,5 @@
 import random
+import time
 
 
 def bubble_sort(v):
@@ -16,12 +17,18 @@ def bubble_sort(v):
                 temp = v[i]
                 v[i] = v[i + 1]
                 v[i + 1] = temp
-                print(v)
             i += 1
         fim -= 1
 
 
-vetor = list(range(0, 10))
+vetor = list(range(0, 10000))
 random.shuffle(vetor)
-print(f"Desordenado\n{vetor}")
+
+# Calculando quanto tempo demorou para ser executado
+antes = time.time()
 bubble_sort(vetor)
+depois = time.time()
+total = (depois - antes) * 1000  # conversão para ms
+
+# print("A ordenação demorou %0.2f ms" % total)
+print(f"A ordenação demorou {total:.2f} ms")
