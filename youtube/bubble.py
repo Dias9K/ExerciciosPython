@@ -9,12 +9,17 @@ def bubble_sort(v):
     while fim > 0:  # enquanto a lista ainda tiver um tamanho, a lista vai sendo ordenada e o "fim" vai diminuindo
         i = 0
         # percorrendo o vetor de 0 até fim
-        while i < fim:
-            # fazendo um swap da posição atual pela a próxima
-            if v[i] > v[i+1]:
-                v[i], v[i + 1] = v[i+1], v[i]
+        while i < fim - 1:
+            if v[i] > v[i + 1]:
+                # fazendo swap da posição atual pela próxima
+                temp = v[i]
+                v[i] = v[i + 1]
+                v[i + 1] = temp
+            i += 1
+        fim -= 1
 
 
 vetor = list(range(0, 10))
 random.shuffle(vetor)
+bubble_sort(vetor)
 print(vetor)
