@@ -1,3 +1,4 @@
+# a ordenação feita pelo bubble é basicamente comparando um elemento atual com o da próxima posição
 import random
 import time
 
