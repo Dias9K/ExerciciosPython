@@ -5,7 +5,7 @@ def binary_search(v, i, f, e):
         m = (i + f) // 2
         if e > v[m]:
             return binary_search(v, m + 1, f, e)
-        if e < v[m]:
+        elif e < v[m]:
             return binary_search(v, i, m - 1, e)
         else:
             return m
