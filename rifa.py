@@ -1,4 +1,3 @@
-# TODO mostrar pro meu parceiro enzzo e ver o que ele acha do código
 import random
 # um gerador de números bastante simplório para que eu não tenha mais problemas de indecisão ao escolher números
 # para colocar pontos em uma rifa ou algo do tipo
@@ -23,7 +22,7 @@ for i in range(quantidade_disponiveis):
 
 print(f"O números disponíveis na rifa são {numeros_disponiveis}")
 
-numeros_escolhidos = []
+# numeros_escolhidos = []
 while True:
     # verificação para checar se a quantidade de números desejados é maior do que a quantidade de números disponíveis
     quantidade_pontos = int(input("Quantos pontos você quer colocar na rifa?\n"))
@@ -32,13 +31,12 @@ while True:
     else:
         # o sample pega da lista 'numeros_disponiveis' a mesma quantidade de 'quantidade_pontos' e os armazena na
         # lista 'numeros_escolhidos'
-        numeros_escolhidos.append(random.sample(numeros_disponiveis, quantidade_pontos))
+        numeros_escolhidos = random.sample(numeros_disponiveis, quantidade_pontos)
         break
 
 print(f"Os {quantidade_pontos} números escolhidos foram: {numeros_escolhidos}")
 
-# for i in range(len(numeros_disponiveis)):
-#     numeros_escolhidos.append(random.sample(numeros_disponiveis, quantidade_pontos))
-# print(numeros_disponiveis)
-# print(f"Os {quantidade_pontos} números escolhidos foram: {numeros_escolhidos[
-#     random.randint(0, len(numeros_escolhidos)-1)]}")
+for i in range(len(numeros_disponiveis)):
+    numeros_escolhidos.append(random.sample(numeros_disponiveis, quantidade_pontos))
+print(numeros_disponiveis)
+print(f"Os {quantidade_pontos} números escolhidos foram: {numeros_escolhidos[random.randint(0, len(numeros_escolhidos)-1)]}")
