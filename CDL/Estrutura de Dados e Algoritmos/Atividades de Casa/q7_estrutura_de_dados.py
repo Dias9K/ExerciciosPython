@@ -13,4 +13,4 @@ def binary_search(v, i, f, e):
 
 
 vetor = list(range(1, 1000))
-print(binary_search(vetor, vetor[0], vetor[len(vetor) - 1], 100))
+binary_search(vetor, 0, len(vetor)-1, 100)
