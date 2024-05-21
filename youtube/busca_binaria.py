@@ -13,15 +13,15 @@ def busca_binaria(vet, ponto_inicial, ponto_final, elemento):  # o algoritmo rec
             return busca_binaria(vet, ponto_inicial, meio - 1, elemento)
         # se o meio do vetor for o elemento escolhido, o código para se o meio for menor do que o elemento escolhido,
         else:
-            return meio  # elemento encontrado
-    return -1  # elemento não encontrado
+            return meio  # elemento encontrado e retorna um número positivo
+    return -1  # elemento não encontrado e retorna um número negativo
 
 
 vetor = list(range(0, 10))
 chave = 9
 posicao = busca_binaria(vetor, 0, len(vetor) - 1, chave)
 
-if posicao >= 0:
+if posicao >= 0:  # positivo se for encontrado
     print("O elemento %d foi encontrado na posição %d." % (chave, posicao))
-else:
+else:  # negativo caso não seja encontrado
     print("O elemento %d não foi encontrado." % chave)
