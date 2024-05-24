@@ -1,3 +1,4 @@
+# TODO entender como isso funciona e praticar
 velha = """
                    -- POSICOES --
        |   |         1 | 2 | 3
