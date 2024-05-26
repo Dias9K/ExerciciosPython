@@ -23,3 +23,4 @@ def selection_sort(v):
 vetor = list(range(0, 10))
 random.shuffle(vetor)
 print(vetor)
+# TODO terminar isso
