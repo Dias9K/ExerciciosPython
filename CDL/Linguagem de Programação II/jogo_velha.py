@@ -2,8 +2,8 @@
 
 # Função para exibir o tabuleiro
 def exibir_tabuleiro(tabuleiro):
-    for linha in tabuleiro: # cada linha é uma lista de strings
-        print(" | ".join(linha)) # a função join concatena os elementos da lista em apenas uma string
+    for linha in tabuleiro:  # cada linha é uma lista de strings
+        print(" | ".join(linha))  # a função join concatena os elementos da lista em apenas uma string
         print("-" * 10)
 
 
