@@ -5,13 +5,21 @@
 
 import sys
 
-if len(sys.argv) != 2:  # Lembre-se que o nome do programa é o primeiro da lista
-    print("\nUso: e09-01.py nome_do_arquivo\n\n")
-else:
-    nome = sys.argv[1]
-    arquivo = open(nome, "r")
-    for linha in arquivo.readlines():
-        # Como a linha termina com ENTER,
-        # retiramos o último caractere antes de imprimir
-        print(linha[:-1])
-    arquivo.close()
+
+def ler_arquivo(nome_arquivo):
+    try:
+        with open(nome_arquivo, 'r') as arquivo:
+            for linha in arquivo:
+                print(linha.strip())  # Remove espaços em branco no início e fim da linha
+    except FileNotFoundError:
+        print(f"Arquivo '{nome_arquivo}' não encontrado.")
+    except Exception as e:
+        print(f"Erro ao ler o arquivo: {e}")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Uso: python nome_do_programa.py nome_do_arquivo")
+    else:
+        nome_arquivo = sys.argv[1]
+        ler_arquivo(nome_arquivo)
